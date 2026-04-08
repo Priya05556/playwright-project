@@ -19,6 +19,10 @@ await expect(page.locator("[style*='block']")).toContainText('Incorrect');
 //type-fill
 await userName.fill();
 await userName.fill("rahulshettyacademy");
+await signIn.click();
+console.log(await cardTitles,first().textContent());
+const allTitles=await cardTitles.allTextContents();
+
 
 });
 
